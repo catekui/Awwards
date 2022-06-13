@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+
 # Create your models here.
 
 
@@ -33,16 +34,22 @@ class Profile(models.Model):
 #     email = models.EmailField(max_length=100)
 #     date_created = models.DateTimeField(auto_now_add=True)
 
-class Project(models.Model):
-    user_id = models.ForeignKey(User)
-    title = models.CharField(max_length=400)
-    image = models.ImageField(max_length=500)
-    description = models.TextField
-    link = models.URLField(max_length=1000)
+# class Project(models.Model):
+#     # user = models.ForeignKey(User)
+#     title = models.CharField(max_length=400)
+#     image = models.ImageField(max_length=500)
+#     description = models.TextField
+#     link = models.URLField(max_length=1000)
+
+#     def __str__(self):
+#         return f'{self.user.username} Project'
 
 
-class Ratings(models.Model):
-    project_id = models.ForeignKey()
-    rating = models.IntegerField
+# class Ratings(models.Model):
+#     project_id = models.ForeignKey()
+#     rating = models.IntegerField
+
+#     def __str__(self):
+#         return f'{self.user.username} Ratings'
 
 

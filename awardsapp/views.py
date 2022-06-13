@@ -16,6 +16,7 @@ def base(request):
 def navbar(request):
     return render(request, 'navbar.html')
 
+
 def register(request):
 	if request.user.is_authenticated:
 		return redirect('base')
@@ -56,3 +57,17 @@ def loginPage(request):
 def logoutUser(request):
 	logout(request)
 	return redirect('login')
+
+
+
+def profile(request):
+    # user = request.user
+    # form = ProfileForm(instance=user)
+
+    # # if request.method == 'POST':
+    # #     form = ProfileForm(request.POST, request.FILES, instance=user)
+    # #     if form.is_valid():
+    
+
+    # context = {'form': form}
+    return render(request, 'profile.html')

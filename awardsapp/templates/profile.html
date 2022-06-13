@@ -1,0 +1,26 @@
+
+
+
+
+<div clas="row">
+    <div class="col-md-3">
+        <div class="card card-body">
+            <a href="{% url 'base'  %}" class="btn btn-info">
+                Back to Profile
+            </a> 
+            <h3 styles="text-align:center" ></h3>
+            <img src="" alt="" class="{{request.user.profile.image.url}}">
+        </div>
+        <div class="col-md-9">
+            <div class="card card-body">
+                <form action="" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %} 
+                    {{form_as_p}}
+                    <input class='btn btn-primary'  type="submit" name="update">
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>
