@@ -33,11 +33,16 @@ class Profile(models.Model):
 #     email = models.EmailField(max_length=100)
 #     date_created = models.DateTimeField(auto_now_add=True)
 
-class projects(models.Model):
-    user = models.ForeignKey(User)
+class Project(models.Model):
+    user_id = models.ForeignKey(User)
     title = models.CharField(max_length=400)
     image = models.ImageField(max_length=500)
     description = models.TextField
     link = models.URLField(max_length=1000)
+
+
+class Ratings(models.Model):
+    project_id = models.ForeignKey()
+    rating = models.IntegerField
 
 
