@@ -48,10 +48,10 @@ Here is a run through of how to set up the application:
        $ git clone https://github.com/catekui/Awwards
 
 ## Running the Application
-* Install virtual environment using `$ python3.6 -m venv --without-pip virtual`
+* Install virtual environment using `$ python3 -m venv --without-pip virtual`
 * Activate virtual environment using `$ source virtual/bin/activate`
 * Download pip in our environment using `$ curl https://bootstrap.pypa.io/get-pip.py | python`
-* Install all the dependencies from the requirements.txt file by running `python3.6 pip install -r requirements.txt`
+* Install all the dependencies from the requirements.txt file by running `python3 pip install -r requirements.txt`
 * Create a database and edit the database configurations in `settings.py` to your own credentials.
 * Make migrations
 
