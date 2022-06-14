@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from pyuploadcare.dj.models import ImageField
 from tinymce.models import HTMLField
-django.db.models.BigAutoFieldg
+
 
 # Create your models here.
 class Profile(models.Model):
