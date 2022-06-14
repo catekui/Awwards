@@ -86,12 +86,10 @@ WSGI_APPLICATION = 'rate.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        # 'NAME': 'gallery',
-        # 'USER': 'moringa',
-        # 'PASSWORD':'1234',
-        'NAME': ('gallery'),
-        'USER': ('moringa'),
-        'PASSWORD':('1234'),
+        'NAME': 'gallery',
+        'USER': 'moringa',
+        'PASSWORD':'1234',
+        
     }
 }
 
@@ -143,3 +141,5 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 django_heroku.settings(locals())
+
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
