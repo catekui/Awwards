@@ -38,7 +38,7 @@ Here is a run through of how to set up the application:
 
 ## Getting started
 ### Prerequisites
-* python3.6
+* python
 * virtual environment
 * pip
 
@@ -56,16 +56,16 @@ Here is a run through of how to set up the application:
 * Make migrations
 
         $ python manage.py makemigrations photos
-        $ python3.6 manage.py migrate 
+        $ python3 manage.py migrate 
 
 * To run the application, in your terminal:
 
-        $ python3.6 manage.py runserver
+        $ python3 manage.py runserver
         
 ## Testing the Application
 * To run the tests for the class file:
 
-        $ python3.6 manage.py test photos
+        $ python3 manage.py test photos
         
 ## Technologies Used
 - Python 
