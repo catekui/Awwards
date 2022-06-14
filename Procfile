@@ -1,1 +1,1 @@
-web: gunicorn homage.wsgi
+web: gunicorn rate.wsgi
