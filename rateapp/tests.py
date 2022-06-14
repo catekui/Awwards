@@ -2,20 +2,7 @@ from django.test import TestCase
 from .models import Profile, Project, Review
 
 # Create your tests here.
-class ProjectTestClass(TestCase):
 
-  # Set up method
-  def setUp(self):
-    self.project1= Project(title = 'Titl1', description = 'Lorem Ipsum' )
-
-  # Testing  instance
-  def test_instance(self):
-    self.assertTrue(isinstance(self.project1,Project))
-
-  # Testing String representation Method
-  def test_string_representation(self):
-    project = Project(title="sometext")
-    self.assertEqual(str(project), 'sometext')
 
 class ProfileTestClass(TestCase):
 
