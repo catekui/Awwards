@@ -1,6 +1,5 @@
 # Awwards
 
-## AWWARDS 
 #### <div dir="rtl">By **Catherine Wangui**</div>
 
 ## Description
