@@ -86,9 +86,12 @@ WSGI_APPLICATION = 'rate.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'gallery',
-        'USER': 'moringa',
-        'PASSWORD':'1234',
+        # 'NAME': 'gallery',
+        # 'USER': 'moringa',
+        # 'PASSWORD':'1234',
+        'NAME': ('gallery'),
+        'USER': ('moringa'),
+        'PASSWORD':('1234'),
     }
 }
 
